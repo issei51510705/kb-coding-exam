@@ -1,0 +1,10 @@
+<h1>Geekkobe</h1>
+<h3>新規Students</h3>
+<%= form_for @students do |f| %>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_field :body, :size => 140 %>
+  </div>
+  <%= f.submit "Studentsする" %>
+<% end %>
+<%= link_to "Students一覧に戻る", students_path %>
